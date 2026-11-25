@@ -1,0 +1,36 @@
+{
+  "name": "rto-mcp",
+  "version": "0.1.0",
+  "description": "MCP server for Indian vehicle registration (RTO) lookups. Lets Claude and other AI tools decode a vehicle registration number to its RTO office, state and vehicle class.",
+  "type": "module",
+  "license": "MIT",
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "india",
+    "indian-data",
+    "rto",
+    "vehicle",
+    "registration",
+    "rc",
+    "vehicle-registration"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "rto-mcp": "./server.js"
+  },
+  "files": [
+    "server.js",
+    "lib"
+  ],
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js",
+    "test": "node scripts/test.mjs"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.0"
+  }
+}
